@@ -9,9 +9,17 @@
 <body>
 <main class="page">
   <h1>Catalog</h1>
-  <p class="lede">Our catalog of curated pieces.</p>
+  <input type="radio" name="layout-mode" id="btn-grid" class="mode-radio" checked>
+  <input type="radio" name="layout-mode" id="btn-list" class="mode-radio">
+  <input type="radio" name="layout-mode" id="btn-magazine" class="mode-radio">
 
-  <div class="items grid-mode">
+  <div class="switcher">
+    <label for="btn-grid" class="switcher-btn">Grid Mode</label>
+    <label for="btn-list" class="switcher-btn">List Mode</label>
+    <label for="btn-magazine" class="switcher-btn">Magazine Mode</label>
+  </div>
+
+  <div class="items">
     <article class="item lead-item">
       <div class="item__img item__img--rose"></div>
       <div class="item__body">
